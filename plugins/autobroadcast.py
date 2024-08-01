@@ -7,7 +7,7 @@ from VIPMUSIC import app
 from VIPMUSIC.utils.database import get_served_chats
 
 # Convert AUTO_GCAST to boolean based on "On" or "Off"
-AUTO_GCASTS = AUTO_GCAST.strip().lower() == "on"
+AUTO_GCASTS = True
 
 START_IMG_URLS = "https://graph.org/file/760169f7f8dd536c50793.jpg"
 
