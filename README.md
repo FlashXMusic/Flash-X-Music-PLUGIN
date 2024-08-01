@@ -15,7 +15,7 @@
 
 ### 🖇 VPS Deployment
 - Get your [Necessary Variables](https://github.com/FlashXMusic/Flash2ndXMusic/blob/master/sample.env)
-- clone repo : `git clone [Flash2ndXMusic](https://github.com/FlashXMusic/Flash2ndXMusic) && cd Flash2ndXMusic`
+- clone repo : `git clone [Flash2ndXMusic](https://github.com/FlashXMusic/Flash2ndXMusic) && cd FlashXMusic`
 - Setup by : `bash setup`
 - Install tmux to keep running your bot when you close the terminal by :
 `sudo apt install tmux && tmux`
