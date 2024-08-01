@@ -9,24 +9,31 @@ from VIPMUSIC.utils.database import get_served_chats
 # Convert AUTO_GCAST to boolean based on "On" or "Off"
 AUTO_GCASTS = True
 
-START_IMG_URLS = "https://graph.org/file/760169f7f8dd536c50793.jpg"
+START_IMG_URLS = "https://te.legra.ph/file/58f0f65ff6d4e80a99afd.jpg"
 
-MESSAGES = f"""**🌹𝗟𝗼𝗼𝗸𝗶𝗻𝗴 𝗙𝗼𝗿 𝗔𝗴𝗲𝗻𝘁 𝗪𝗼𝗿𝗸 𝗜𝗻 𝗡𝗲𝘄 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 𝗝𝘂𝘀𝘁 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗠𝗲 𝗪𝗵𝗼 𝗪𝗮𝗻𝘁 𝘁𝗼 𝗪𝗼𝗿𝗸 𝗔𝘀 𝗔 𝗔𝗴𝗲𝗻𝘁.
+MESSAGES = f"""**"မမဋီကာ (၂)''
 
-𝗠𝘀𝗴 𝗛𝗲𝗿𝗲 :- @OkWinAgent
+ကမ္ဘာကို ကျောခိုင်းပြီး
+ကမ္ဘာကြီးဆီ ထွက်လာလိုက်တယ်...
+ပျော်ရွှင်ခြင်း ကို ကျနော်မရှာဘူး...
+မမ က ယူလာပေးတာ...
 
-𝗦𝗮𝗹𝗹𝗲𝗿𝘆 𝗦𝘁𝗮𝗿𝘁𝘀 𝘄𝗶𝘁𝗵 𝟮 𝗔𝗰𝘁𝗶𝘃𝗲 𝗣𝗹𝗮𝘆𝗲𝗿.
+ဓားတောင်နဲ့မီးပင်လယ် ဖြတ်မယ့်ကောင်က
+မိုးခြိမ်းသံကြားတော့  မမရေ တဲ့...
 
-🎁𝗥𝗲𝗴𝗶𝘀𝘁𝗲𝗿 𝗹𝗶𝗻𝗸 :- https://oko888.com/#/register?invitationCode=8284112316
+သည်းပါတယ်ဆိုတဲ့ တိမ်တွေအောက်
+ကလေးလို ကျနော်ပြေးဝင်တယ်...
 
-➻ 𝗟𝗼𝘀𝘀 𝗥𝗲𝗳𝘂𝗻𝗱 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 ✅
-➥ 𝗣𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝗼𝗻 » @OK_WIN_PREDICTIONS**"""
+မိုးစက်တွေမဟုတ်ဘူး...
+အဲ့ဒါ မမဆံနွယ်တွေ...
+
+🍂💌**"""
 BUTTONS = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "๏ Click & Get ₹100 ๏",
-                url=f"https://okwin.one/#/register?invitationCode=8284112316",
+                "๏ ꜱᴜᴘᴘᴏʀᴛ ๏",
+                url=f"https://t.me/seriousvs_version20",
             )
         ]
     ]
@@ -47,7 +54,7 @@ BUTTON = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 "๏ ᴋɪᴅɴᴀᴘ ᴍᴇ ๏",
-                url=f"https://t.me/TG_VC_BOT?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users",
+                url=f"https://t.me/sasuke2ndmusic_bot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users",
             )
         ]
     ]
@@ -80,7 +87,7 @@ async def send_message_to_chats():
                         reply_markup=BUTTONS,
                     )
                     await asyncio.sleep(
-                        20
+                        1
                     )  # Sleep for 20 seconds between sending messages
                 except Exception as e:
                     pass  # Do nothing if an error occurs while sending message
