@@ -12,7 +12,7 @@ from VIPMUSIC.utils.database import add_served_chat, get_assistant
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/c1e44824e6b8d41def80c.jpg",
-        caption=f"""ᴅᴀɪʟʏ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ""",
+        caption=f"""**ᴅᴀɪʟʏ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -24,6 +24,21 @@ async def help(client: Client, message: Message):
         ),
     )
 
+@app.on_message(filters.command("dev", "developer"))
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/c1e44824e6b8d41def80c.jpg",
+        caption=f"""**ᴛɪᴍᴇꜱ ʏᴏᴜ ᴍᴀᴅᴇ ᴍᴇ ʟᴀᴜɢʜ, ꜰᴏʀ ᴛʜᴇ ᴛɪᴍᴇꜱ ʏᴏᴜ ʟɪꜱᴛᴇɴᴇᴅ ᴛᴏ ᴍᴇ, ᴀɴᴅ ᴛʜᴇ ᴛɪᴍᴇꜱ ʏᴏᴜ ꜱʜᴀʀᴇᴅ ʏᴏᴜʀ ʟɪꜰᴇ ᴡɪᴛʜ ᴍᴇ. ɪ ʜᴏᴘᴇ ᴛʜᴀᴛ ʏᴏᴜ ꜰɪɴᴅ ʏᴏᴜʀ ʜᴀᴘᴘɪɴᴇꜱꜱ ᴇᴠᴇɴ ᴛʜᴏᴜɢʜ ɪᴛ'ꜱ ɴᴏᴛ ᴍᴇ. ᴀʟʟ ɪ ᴡᴀɴᴛ ᴛᴏ ꜱᴀʏ ɪꜱ ᴛʜᴀɴᴋ ʏᴏᴜ ᴀɴᴅ ɢᴏᴏᴅʙʏᴇ.**""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Uchihasasuke_is_myLife"
+                    )
+                ]
+            ]
+        ),
+    )
 
 @app.on_message(filters.command("clone"))
 async def clones(client: Client, message: Message):
@@ -68,7 +83,7 @@ async def add_allbot(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:
         await message.reply(
-            "**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @TG_VC_BOT`**"
+            "**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @sasukevipmusicbot`**"
         )
         return
 
@@ -82,7 +97,7 @@ async def add_allbot(client, message):
         lol = await message.reply("🔄 **ᴀᴅᴅɪɴɢ ɢɪᴠᴇɴ ʙᴏᴛ ɪɴ ᴀʟʟ ᴄʜᴀᴛs!**")
         await userbot.send_message(bot_username, f"/start")
         async for dialog in userbot.get_dialogs():
-            if dialog.chat.id == -1002120144597:
+            if dialog.chat.id == -1001901470191:
                 continue
             try:
 
