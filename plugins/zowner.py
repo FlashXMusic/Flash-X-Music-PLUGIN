@@ -8,16 +8,16 @@ from VIPMUSIC.mongo.afkdb import LOGGERS as OWNERS
 from VIPMUSIC.utils.database import add_served_chat, get_assistant
 
 
-@app.on_message(filters.command("repo"))
+@app.on_message(filters.command("repo", "update"))
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        photo=f"https://telegra.ph/file/c1e44824e6b8d41def80c.jpg",
+        caption=f"""ᴅᴀɪʟʏ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC"
+                        "ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/seriousvs_version20"
                     )
                 ]
             ]
@@ -28,13 +28,13 @@ async def help(client: Client, message: Message):
 @app.on_message(filters.command("clone"))
 async def clones(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
-        caption=f"""**🙂You Are Not Sudo User So You Are Not Allowed To Clone Me.**\n**😌Click Given Below Button And Host Manually Otherwise Contact Owner Or Sudo Users For Clone.**""",
+        photo=f"https://te.legra.ph/file/c1e44824e6b8d41def80c.jpg",
+        caption=f"""**ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ꜱᴜᴅᴏ ᴜꜱᴇʀ ꜱᴏ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴄʟᴏɴᴇ ᴍᴇ.**\n**ᴄʟɪᴄᴋ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴀɴᴅ ʜᴏꜱᴛ ᴍᴀɴᴜᴀʟʟʏ ᴏᴛʜᴇʀᴡɪꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴏʀ ꜱᴜᴅᴏ ᴜꜱᴇʀꜱ ꜰᴏʀ ᴄʟᴏɴᴇ**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC"
+                        "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Uchihasasuke_is_myLife"
                     )
                 ]
             ]
