@@ -9,11 +9,11 @@ from pyrogram.types import ChatMemberUpdated, InlineKeyboardButton, InlineKeyboa
 from VIPMUSIC import app
 
 random_photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+    "https://telegra.ph/file/c1e44824e6b8d41def80c.jpg",
+    "https://telegra.ph/file/18e61e800e05062b61b83.jpg",
+    "https://telegra.ph/file/0968f0f08b94cc21c2689.jpg",
+    "https://telegra.ph/file/9e56aec423cd7c5daabf9.jpg",
+    "https://telegra.ph/file/0b98dc047825876744a2e.jpg",
 ]
 
 bg_path = "VIPMUSIC/assets/userinfo.png"
@@ -76,7 +76,7 @@ async def member_has_left(client: app, member: ChatMemberUpdated):
         else:
             welcome_photo = random.choice(random_photo)
 
-        caption = f"**#New_Member_Left**\n\n**๏** {user.mention} **ʜᴀs ʟᴇғᴛ ᴛʜɪs ɢʀᴏᴜᴘ**\n**๏ sᴇᴇ ʏᴏᴜ sᴏᴏɴ ᴀɢᴀɪɴ..!**"
+        caption = f"**🗨 ɢᴏᴏᴅʙʏᴇ {user.mention}**🗨\n\n**❍**🗯 ᴡᴇ'ʟʟ ᴍɪss ʏᴏᴜ! ɪᴅ ʏᴏᴜ ᴇᴠᴇʀ ᴅᴇᴄɪᴅᴇ ᴛᴏ ʀᴇᴛᴜʀɴ, ᴏᴜʀ ᴅᴏᴏʀs ᴀʀᴇ ᴀʟᴡᴀʏs ᴏᴘᴇɴ**"
         button_text = "๏ ᴠɪᴇᴡ ᴜsᴇʀ ๏"
         deep_link = f"tg://openmessage?user_id={user.id}"
 
