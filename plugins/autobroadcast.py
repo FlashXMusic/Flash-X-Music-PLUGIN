@@ -7,7 +7,7 @@ from VIPMUSIC import app
 from VIPMUSIC.utils.database import get_served_chats
 
 # Convert AUTO_GCAST to boolean based on "On" or "Off"
-AUTO_GCASTS = True
+AUTO_GCASTS = False
 
 START_IMG_URLS = "https://te.legra.ph/file/58f0f65ff6d4e80a99afd.jpg"
 
